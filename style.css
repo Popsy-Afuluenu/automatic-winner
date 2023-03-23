@@ -1,0 +1,366 @@
+@font-face {
+    font-family: 'inter';
+    src: url(fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+@font-face {
+    font-family: 'interextra';
+    src: url(fonts/Inter-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: 'interbold';
+    src: url(fonts/Inter-Bold.ttf);
+}
+
+.container{
+    width: 1054px;
+    min-height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav{
+    margin-right: -30px;
+}
+
+nav ul li{
+    display: inline-block;   
+    margin-right: 30px; 
+}
+
+nav ul li a{
+    position: relative;
+    text-decoration: none;
+    color: grey;
+    font-family: 'inter';
+}
+
+.navbutton:hover{
+    color: hsl(5, 85%, 63%);
+}
+
+section{
+    margin-top: 40px;
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+
+.left img{
+    max-width: 100%;
+}
+
+
+
+
+
+.left{
+    width: 686px
+}
+
+.right{
+    color: white;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    
+    
+    background-color: black;
+    min-height: 465px;
+}
+
+.new{
+    display: flex;
+    flex-direction: column;
+    min-height: 465px;
+    margin: auto;
+    width: 85%;
+}
+
+.newhead{
+    font-family: 'interextra';
+    color: hsl(35, 77%, 62%);
+    font-size: 2rem;
+    height: 60px;
+    padding-top: 30px;
+    margin-bottom: -10px;
+}
+
+.newcard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 120px;
+    border-bottom: solid 0.5px white;
+}
+
+.newcard:last-of-type{
+    border: none;
+}
+
+a.newcard{
+    color: white;
+}
+
+.newcard h1{
+    /* margin-top: 20px; */
+    margin-bottom: 10px;
+    font-family: 'interbold';
+    font-size: 1rem;
+}
+
+
+.newcard:hover h1{
+    color: hsl(35, 77%, 62%);
+}
+/* .newcard h1:hover{
+    color: hsl(35, 77%, 62%);
+} */
+
+
+
+.newcard p{
+    font-family: 'inter';
+    font-size: 0.9rem;
+    line-height: 1.5em;
+}
+
+.leftbot{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.leftbot h1{
+    font-family: 'interextra';
+    font-size: 3.3rem;
+    margin-right: 50px;
+
+}
+
+.leftbotpar{
+    width: 800px;
+}
+
+.leftbot p{
+    color: gray;
+    font-family: 'inter';
+    font-size: 0.9rem;
+    line-height: 1.5em;
+
+}
+
+.click{
+    margin-top: 45px;
+}
+
+.mybutton{
+    background-color: hsl(5, 85%, 63%);
+    color: white;
+    font-family: 'interbold', serif;
+    padding: 11px 25px;
+    
+}
+
+.mybutton:hover{
+    background-color: black;
+}
+
+.cards{
+    margin-top: 65px;
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    justify-content: space-around;
+}
+
+.card{
+    width: 30%;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.card img{
+    height: 110px;
+}
+
+.cardpar{
+    /* display: block; */
+    margin-left: 20px;
+
+}
+
+.cardpar h1{
+    color: rgba(128, 128, 128, 0.501);
+    margin-bottom: 15px;
+    font-family: 'interextra';
+    font-size: 2rem;
+}
+
+.cardpar h2{
+    color: black;
+    margin-bottom: 10px;
+    font-family: 'interbold';
+    font-size: 1rem;
+}
+
+.cardpar p{
+    font-size: 0.8rem;
+    line-height: 1.5em;
+    font-family: 'inter';
+    color: gray;
+}
+
+.card:hover .cardpar h2{
+    color: hsl(5, 85%, 63%);
+}
+
+.mobwrap{
+    display: none;
+}
+
+@media (max-width: 575px){
+
+    .container{
+      
+        width: 100%;
+    }
+    
+    .cont{
+        margin-left: auto;
+        margin-right: auto;
+        width: 350px;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .mobnav a{
+        color: black;
+    }
+
+    .mobwrap{
+        display: block;
+    }
+
+    .mobnav{
+        display: none;
+        position: absolute;
+        margin-left: -87px;
+    }
+
+    .navbutton{
+        display: block;
+        background-color: rgba(255, 255, 255, 0.761);
+        padding: 15px 30px;
+        text-align: center;
+    }
+
+    section{
+        width: 100%;
+    display: block;
+   }
+
+.left{
+    width: 100%;
+}
+
+   .left img{
+    width: 100%;
+   }
+   
+   .leftbot{
+    width: 100%;
+    display: block;
+   }
+
+   .leftbot h1{
+    font-family: 'interextra';
+    font-size: 3.3rem;
+    margin: 0;
+
+}
+
+.leftbotpar{
+    margin: 0px;
+    width: 100%;
+}
+
+.leftbotpar p{
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.click{
+    margin-top: 35px;
+}
+
+   .right{
+    width: auto;
+    margin-top: 70px;
+   }
+   
+    .cards{
+        display: block;
+    }
+
+    .card{
+      
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .cardpar{
+        width: 500px;
+        flex-direction: column;
+    }
+
+    .card img{
+        height: auto;
+    }
+
+    .cardpar h1{
+        color: rgba(128, 128, 128, 0.501);
+        margin-bottom: 10px;
+        font-family: 'interextra';
+        font-size: 1.5rem;
+    }
+    
+    .cardpar h2{
+        color: black;
+        margin-bottom: 5px;
+        font-family: 'interbold';
+        font-size: 1rem;
+    }
+    
+    .cardpar p{
+        font-size: 0.8rem;
+        line-height: 1.5em;
+        font-family: 'inter';
+        color: gray;
+    }
+
+ 
+
+}
